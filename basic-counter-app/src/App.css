@@ -1,0 +1,43 @@
+.App {
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header{
+  min-height:80px;
+  background-color: brown;
+  color:#fff;
+  font-size:26px;
+  padding:0 20px;
+  display: flex;
+  text-transform: capitalize;
+  align-items: center;
+}
+main{
+  padding:20px;
+}
+.account{
+  padding:20px 0;
+  text-align: center;
+  justify-content: center;
+  background-color: aqua;
+  flex-wrap:wrap;
+  margin-bottom:20px;
+}
+button{
+  background-color: #000;
+  height:40px;
+  border-radius:5px;
+  border:0;
+  color:#fff;
+  width:200px;
+  margin: 10px;
+
+}
+.pending{
+  color:blue;
+}
+.error{
+  color:red;
+}
