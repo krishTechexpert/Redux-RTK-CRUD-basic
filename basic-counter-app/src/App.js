@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Account from './components/Account';
 import {Bonus} from './components/Bonus';
+import {Rewards} from "./components/Rewards";
 import {useSelector} from 'react-redux';
 function App() {
   const amount=useSelector((state) => state.account.amount)
@@ -21,6 +22,7 @@ function App() {
          <h2>Total points: {points}</h2>
         <Account/>
         <Bonus />
+        <Rewards />
       </main>
     </div>
   );
