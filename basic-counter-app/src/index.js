@@ -7,14 +7,8 @@ import {createStore,applyMiddleware,combineReducers} from 'redux';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 import axios from 'axios';
-import accountReducer from "./reducers/account";
-import bonusReducer from "./reducers/bonus";
 import { Provider } from 'react-redux';
-
-const store= createStore(combineReducers({
-  account:accountReducer,
-  bonus:bonusReducer
-}),applyMiddleware(logger,thunk));
+import store from "./store/store.js";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

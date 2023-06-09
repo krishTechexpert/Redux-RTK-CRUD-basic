@@ -1,5 +1,5 @@
 import React from 'react';
-import {incrementBonusFN} from "../actions";
+import {incrementBonus} from "../slices/bonusSlice";
 import {useSelector,useDispatch} from 'react-redux';
 
 export function Bonus() {
@@ -12,7 +12,7 @@ export function Bonus() {
     my Points: {points}
 
     <div>
-     <button onClick={() => dispatch(incrementBonusFN())}>increment points</button>
+     <button onClick={() => dispatch(incrementBonus())}>increment points</button>
     </div>
 
 </div>
