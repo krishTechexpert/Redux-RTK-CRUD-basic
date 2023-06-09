@@ -1,2 +1,2 @@
 # Redux-basic
-Redux basic without using Redux Toolkit
+Redux basic part-1 without using Redux Toolkit
