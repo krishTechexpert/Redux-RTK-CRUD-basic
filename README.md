@@ -1,2 +1,2 @@
-# Redux-basic
-Redux basic part-1 without using Redux Toolkit
+# Redux-RTK-basic-CRUD
+In this, you can learn How to used Redux RTK inwhich I have create CRUD Operation using Json-server Api
