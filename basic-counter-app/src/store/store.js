@@ -1,14 +1,12 @@
-import { configureStore} from '@reduxjs/toolkit';
-
-import accountSlice from "../slices/accountSlice";
-import bonusSlice from '../slices/bonusSlice';
-import rewardReducer from '../reducers/rewards';
+import { configureStore} from '@reduxjs/toolkit'
+import {countryApi} from '../api/CountrySlice'; 
 const store = configureStore({
     reducer:{
-        account:accountSlice,
-        bonus:bonusSlice,
-        rewards:rewardReducer
-    }
+        [countryApi.reducerPath]:countryApi.reducer
+    },
+    middleware: getDefaultMiddleware =>
+        getDefaultMiddleware().concat(countryApi.middleware)
+
 })
 
 export default store;

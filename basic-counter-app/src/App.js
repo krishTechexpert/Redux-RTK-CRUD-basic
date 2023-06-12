@@ -1,28 +1,15 @@
 import React,{useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Account from './components/Account';
-import {Bonus} from './components/Bonus';
-import {Rewards} from "./components/Rewards";
-import {useSelector} from 'react-redux';
+import {Country} from "./components/Country";
 function App() {
-  const amount=useSelector((state) => state.account.amount)
-  const points=useSelector((state) => state.bonus.points)
-  const account=useSelector((state) => state.account);
 
   return (
     <div className="App">
-      <header>basic counter app using Redux</header>
+      <header>Basic RTK query Api CRUD operations</header>
       <main>
-        {account.pending?<p className='pending'>Pending...</p>:
-        account.error?<p className='error'>{account.error}</p> :
-        <h2>Total Amount: {amount}</h2>
-         
-        }
-         <h2>Total points: {points}</h2>
-        <Account/>
-        <Bonus />
-        <Rewards />
+        
+        <Country />
       </main>
     </div>
   );

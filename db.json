@@ -1,23 +1,16 @@
 {
-    "account":[
-
-        {
-            "id":1,
-            "amount":100
-        },
-        {
-            "id":2,
-            "amount":200
-        }
-    ],
-    "bonus":[
-        {
-            "id":1,
-            "points":10
-        },
-        {
-            "id":2,
-            "points":20
-        }
-    ]
+  "country": [
+    {
+      "id": 1686590169724,
+      "country": "india"
+    },
+    {
+      "id": 1686590964244,
+      "country": "aus"
+    },
+    {
+      "id": 1686590969870,
+      "country": "america"
+    }
+  ]
 }
